@@ -12,7 +12,7 @@
     <groupId>org.webjars</groupId>
     <artifactId>tether</artifactId>
     <name>Tether</name>
-    <version>1.4.0-SNAPSHOT</version>
+    <version>1.4.0</version>
     <description>WebJar for Tether</description>
     <url>http://tether.io/docs/welcome/</url>
 
@@ -49,7 +49,7 @@
         <url>http://github.com/webjars/tether</url>
         <connection>scm:git:https://github.com/webjars/tether.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/tether.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>tether-1.4.0</tag>
     </scm>
 
     <build>
@@ -83,7 +83,7 @@
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
                                 <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}/dist"/>
+                                    <fileset dir="${project.build.directory}/${project.artifactId}-${version.unsnapshot}/dist" />
                                 </move>
                             </target>
                         </configuration>
